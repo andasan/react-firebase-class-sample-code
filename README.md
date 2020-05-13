@@ -1,3 +1,3 @@
-# react-firebase-blog-starter
+# react-firebase-class-demo
 
 
