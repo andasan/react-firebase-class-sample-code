@@ -6,21 +6,21 @@ const Home = () => {
     {
       title: "My Second Blog Post",
       content:
-        "<p>Fruitcake biscuit jujubes chupa chups brownie chocolate. Pastry jelly beans macaroon soufflé pastry marshmallow cake chocolate bar. Brownie jelly-o lemon drops sweet roll. Donut tiramisu sugar plum chocolate. Croissant muffin biscuit. Cheesecake liquorice pudding oat cake biscuit powder. Chocolate bar wafer brownie danish gummies. Pie gingerbread tart lollipop biscuit cupcake fruitcake sweet macaroon. Dragée icing bear claw sugar plum cake caramels. Dragée muffin halvah topping oat cake powder brownie. Biscuit jelly brownie pastry marshmallow croissant. Sesame snaps jelly chupa chups bonbon apple pie wafer halvah caramels cupcake. Oat cake cotton candy jelly.</p><p>Danish ice cream toffee brownie biscuit. Croissant carrot cake icing candy canes. Pastry cotton candy cake gummies jelly beans. Gingerbread macaroon pie chocolate cake cake tootsie roll. Marzipan dragée chocolate sweet lemon drops candy tiramisu candy canes sweet. Chupa chups toffee bonbon. Pastry sweet roll jelly-o donut candy jelly beans lemon drops. Chocolate cake cupcake soufflé marzipan jelly-o sweet lemon drops pastry candy canes. Candy macaroon macaroon fruitcake toffee. Dessert lollipop soufflé. Caramels biscuit pudding tootsie roll jelly fruitcake. Tiramisu bonbon liquorice chocolate bar chupa chups.</p>",
+        "<p>The Long Trail Ale is a big fan of some Pilsner. When you see a spudgun toward the Honey Brown, it means that a Lone Star living with a Strohs panics. If the Red Stripe related to a Hefeweizen trades baseball cards with another Full Sail IPA, then a black velvet hibernates. When a Keystone toward a Sam Adams earns enough for a beer, a Stella Artois rejoices. When you see some surly malt, it means that a Kashmir IPA ceases to exist.</p>",
       coverImage: "https://source.unsplash.com/collection/190727/1600x900",
-      coverImageAlt: "Another random kitten from placekitten.com.",
+      coverImageAlt: "Another random image",
       slug: "my-second-blog-post",
-      dateFormatted: "2019-08-07",
+      dateFormatted: "2300-08-07",
       datePrettify: "August 7th, 2300"
     },
     {
       title: "My First Blog Post",
       content:
-        "<p>Cupcake ipsum dolor sit amet. Topping cake jelly-o biscuit marshmallow. Lemon drops topping donut biscuit toffee caramels caramels danish. Gingerbread chocolate cake chocolate. Chocolate cake jelly cotton candy gummi bears candy. Chupa chups sesame snaps dessert carrot cake chocolate liquorice gingerbread. Sesame snaps chupa chups tootsie roll croissant ice cream biscuit. Cotton candy fruitcake candy canes. Cake oat cake chocolate cake tiramisu chupa chups. Toffee jelly gingerbread gummi bears cotton candy. Liquorice tiramisu marzipan jelly beans jelly cheesecake candy. Topping cupcake bear claw carrot cake cookie dessert marzipan caramels. Bear claw liquorice cotton candy toffee jelly donut tart tiramisu chocolate. Brownie tiramisu pie halvah.</p>",
+        "<p>Most people believe that the tipsy Dos Equis requires assistance from a frozen Hefeweizen, but they need to remember how slyly the twisted malt prays. Indeed, a Dos Equis writes a love letter to a freight train. The intoxicatedly wet steam engine gets stinking drunk, or a line dancer thoroughly makes a pact with a barely drunk Imperial Stout. A shot completely makes a pact with the nearest miller light. Now and then, another shot cooks cheese grits for some Honey Brown toward a Coors.</p>",
       coverImage: "https://source.unsplash.com/collection/190728/1600x900",
-      coverImageAlt: "A random kitten from placekitten.com.",
+      coverImageAlt: "A random image",
       slug: "my-first-blog-post",
-      dateFormatted: "2019-08-01",
+      dateFormatted: "2300-08-01",
       datePrettify: "August 1st, 2300"
     }
   ];
