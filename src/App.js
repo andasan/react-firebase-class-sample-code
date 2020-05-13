@@ -13,6 +13,9 @@ function App() {
         <Link to="/">
           <h2>My React + Firebase Blog</h2>
         </Link>
+        <ul className="right">
+          <li><Link to="/"><h5>Login</h5></Link></li>
+        </ul>
       </nav>
       <main>
         <Switch>

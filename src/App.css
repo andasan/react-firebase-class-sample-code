@@ -4,16 +4,23 @@ main {
 }
 
 nav {
-  background-color: #039be5;
+  background-color: #ffcc80;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav a {
   text-decoration: none;
 }
 
-nav a h2 {
+nav a h2,h5 {
   color: #ffffff;
   margin: 0;
+}
+
+nav ul {
+  list-style: none;
 }
 
 main {
@@ -38,4 +45,8 @@ main {
 .card-content a {
   display: inline-block;
   margin-top: 12px;
+}
+
+.card-date {
+  color: #ff6d00;
 }
