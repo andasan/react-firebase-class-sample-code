@@ -22,7 +22,7 @@ function App() {
         <Switch>
           <Route path="/create" component={Create} />
           <Route exact path="/" component={Home} />
-          {/* <Route path="/404" component={NoMatch} /> */}
+          <Route path="/404" component={NoMatch} />
           <Route path="/:slug" component={Post} />
         </Switch>
       </main>

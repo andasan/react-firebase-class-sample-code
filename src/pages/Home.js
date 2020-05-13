@@ -39,11 +39,11 @@ const Home = () => {
               <Link to={`/${blogPost.slug}`}>{blogPost.title}</Link> &mdash;{" "}
               <span className="card-date">{blogPost.datePrettify}</span>
             </h2>
-            <p
+            <span
               dangerouslySetInnerHTML={{
                 __html: `${blogPost.content.substring(0, 200)}...`
               }}
-            ></p>
+            ></span>
             <Link to={`/${blogPost.slug}`}>Continue reading...</Link>
           </div>
         </section>

@@ -1,4 +1,6 @@
 import React, {useState} from "react";
+import { Redirect } from "react-router-dom";
+import { db } from "../firebase";
 
 const Post = ({ match }) => {
   const [loading, setLoading] = useState(true);
@@ -6,18 +8,34 @@ const Post = ({ match }) => {
 
   const slug = match.params.slug;
 
-
-  //firebase
-
+  if(loading && !currentPost){
+    db
+    .ref(`/posts/${slug}`)
+    .once("value")
+    .then(snapshot => {
+      if(snapshot.val()){
+        setCurrentPost(snapshot.val());
+      }
+      setLoading(false);
+    })
+    .catch(err => console.error(err.message));
+  }
 
   if(loading){
     return <h1>Loading......</h1>
   }
 
+  const postDoesNotExist = !currentPost;
+  if(postDoesNotExist) {
+    return <Redirect to="/404" />
+  }
+
   return (
     <>
-      <h1>This is a template for blog posts.</h1>
-      <p>We'll get to this once we've hooked up Firebase!</p>
+      <img src={currentPost.coverImage} width="100%" alt={currentPost.coverImageAlt} />
+      <h1>{currentPost.title}</h1>
+      <p>{currentPost.datePrettify}</p>
+      <p>{currentPost.content}</p>
     </>
   );
 };
