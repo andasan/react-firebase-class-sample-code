@@ -5,6 +5,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import Post from "./pages/Post";
 import NoMatch from "./pages/no-match";
+import Create from "./pages/Create"
 
 function App() {
   return (
@@ -14,11 +15,12 @@ function App() {
           <h2>My React + Firebase Blog</h2>
         </Link>
         <ul className="right">
-          <li><Link to="/"><h5>Login</h5></Link></li>
+          <li><Link to="/create"><h5>Create</h5></Link></li>
         </ul>
       </nav>
       <main>
         <Switch>
+          <Route path="/create" component={Create} />
           <Route exact path="/" component={Home} />
           {/* <Route path="/404" component={NoMatch} /> */}
           <Route path="/:slug" component={Post} />

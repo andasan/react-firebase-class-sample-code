@@ -1,7 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
 
 const Post = ({ match }) => {
+  const [loading, setLoading] = useState(true);
+  const [currentPost, setCurrentPost] = useState();
+
   const slug = match.params.slug;
+
+
+  //firebase
+
+
+  if(loading){
+    return <h1>Loading......</h1>
+  }
 
   return (
     <>
