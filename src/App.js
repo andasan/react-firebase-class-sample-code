@@ -5,7 +5,8 @@ import "./App.css";
 import Home from "./pages/Home";
 import Post from "./pages/Post";
 import NoMatch from "./pages/no-match";
-import Create from "./pages/Create"
+import Create from "./pages/Create";
+import Edit from "./pages/Edit";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       </nav>
       <main>
         <Switch>
+          <Route path="/edit/:slug" component={Edit} />
           <Route path="/create" component={Create} />
           <Route exact path="/" component={Home} />
           <Route path="/404" component={NoMatch} />
