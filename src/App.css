@@ -84,3 +84,14 @@ input {
 .card-date {
   color: #ff6d00;
 }
+
+.modal {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
