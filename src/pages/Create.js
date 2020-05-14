@@ -100,7 +100,7 @@ const Create = ({history}) => {
                     }}
                />
 
-               <button onClick={createPost}>Create</button>
+               <button onClick={createPost}>Edit</button>
            </section>
         </div>
     );

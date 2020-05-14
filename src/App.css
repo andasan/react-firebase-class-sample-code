@@ -85,6 +85,17 @@ input {
   color: #ff6d00;
 }
 
+.modal {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
 .loader {
   font-size: 10px;
   margin: 50px auto;
