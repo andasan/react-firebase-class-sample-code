@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import { Link } from "react-router-dom";
 import { db } from "../firebase";
+import BlogSummary from "./BlogSummary";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -24,30 +24,14 @@ const Home = () => {
     })
   }
 
-  if(loading){
-    return <h1>Loading.... </h1>
-  }
+  // if(loading){
+  //   return <h1>Loading.... </h1>
+  // }
   return (
     <>
       <h1>Blog posts</h1>
       <br/>
-      {blogPosts && blogPosts.map(blogPost => (
-        <section key={blogPost.slug} className="card">
-          <img src={blogPost.coverImage} alt={blogPost.coverImageAlt} />
-          <div className="card-content">
-            <h2>
-              <Link to={`/${blogPost.slug}`}>{blogPost.title}</Link> &mdash;{" "}
-              <span className="card-date">{blogPost.datePrettify}</span>
-            </h2>
-            <span
-              dangerouslySetInnerHTML={{
-                __html: `${blogPost.content.substring(0, 200)}...`
-              }}
-            ></span>
-            <Link to={`/${blogPost.slug}`}>Continue reading...</Link>
-          </div>
-        </section>
-      ))}
+      {blogPosts && <BlogSummary blogPosts={blogPosts} loading={loading} />}
     </>
   );
 };
